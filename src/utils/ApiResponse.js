@@ -1,3 +1,5 @@
+import { model } from "mongoose";
+
 class ApiResponse {
     constructor(
         statusCode,
@@ -10,3 +12,5 @@ class ApiResponse {
         this.success = statusCode < 400
     }
 }
+
+module.exports = ApiResponse
