@@ -1,4 +1,6 @@
 const {Schema,model, default: mongoose} = require('mongoose')
+const mongooseAggregatePaginate = require('mongoose-aggregate-paginate-v2')
+
 
 const videoSchema = new Schema({
     videoFile : {
@@ -30,5 +32,7 @@ const videoSchema = new Schema({
         ref : 'User'
     }
 })
+
+videoSchema.plugin(mongooseAggregatePaginate)
 
 export const Video = model('Video',videoSchema)
