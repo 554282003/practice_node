@@ -20,3 +20,5 @@ const uploadOnCloudinary = async (localFilePath) => {
         fs.unlinkSync(localFilePath)
     }
 }
+
+module.exports = {uploadOnCloudinary}

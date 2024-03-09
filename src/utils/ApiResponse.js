@@ -1,5 +1,3 @@
-import { model } from "mongoose";
-
 class ApiResponse {
     constructor(
         statusCode,
@@ -13,4 +11,4 @@ class ApiResponse {
     }
 }
 
-module.exports = ApiResponse
+module.exports = {ApiResponse}
